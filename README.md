@@ -1,5 +1,29 @@
 # Food Vision 🍔
 
+st.title("What's Food Vision ?")
+st.write("""
+FoodVision is an end-to-end **CNN Image Classification Model** which identifies the food in your image. 
+
+It can identify over 100 different food classes
+
+It is based upom a pre-trained Image Classification Model that comes with Keras and then retrained on the infamous **Food101 Dataset**.
+
+**Accuracy :** **`85%`**
+
+**Model :** **`EfficientNetB1`**
+
+**Dataset :** **`Food101`**
+""")
+
+
+
+
+
+
+
+
+
+
 ## Requirements
 -----
 ### Data File
