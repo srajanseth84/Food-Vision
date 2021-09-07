@@ -27,7 +27,7 @@ def predicting(image, model):
 class_names = get_classes()
 
 st.set_page_config(page_title="Food Vision",
-                   page_icon="🍔")
+                   page_icon="🍕")
 
 
 #### Main Body ####
