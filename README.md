@@ -14,18 +14,17 @@ It is based upom a pre-trained Image Classification Model that comes with Keras 
 
 **Dataset :** **`Food101`**
 
-## [To View Deployed Demo on Heroku](https://food-vision101.herokuapp.com/)
-## [To View Deployed Demo on Streamlit](https://share.streamlit.io/srajanseth84/all-ml-projects-streamlit/main/app.py)
+## [View Deployed Demo on Heroku](https://food-vision101.herokuapp.com/)
+## [View Deployed Demo on Streamlit](https://share.streamlit.io/srajanseth84/all-ml-projects-streamlit/main/app.py)
 - Just open above link and select Food Vision
 
 ## Demo
------
 
 ![](extras/)
 
 
-### A Few Examples
--------------------
+## Few Examples
+
 * The beautiful ruins of the ancient city of Persepolis (Iran) with the style of Van Gogh (The Starry Night) 
   <img src="images/">
 * The tomb of Cyrus the great in Pasargadae with the style of a Ceramic Kashi from Ispahan 
@@ -34,7 +33,6 @@ It is based upom a pre-trained Image Classification Model that comes with Keras 
   <img src = "images/">
 
 ## Run Locally
-------
 
 * Clone the project
 
@@ -77,8 +75,8 @@ It is based upom a pre-trained Image Classification Model that comes with Keras 
 
 
 ## Requirements (When building from Scratch)
------
 ### Data File
+
 * [Food-101](http://data.vision.ee.ethz.ch/cvl/food-101.tar.gz)
 (4.67GB)
 
@@ -95,6 +93,11 @@ It is based upom a pre-trained Image Classification Model that comes with Keras 
 ### Trained Model (Inception-Resnet-V2)
 
 * [Download Link](https://drive.google.com/file/d/1oYT2Kcy8mNOyCOyJq5b6maZ9g84WcCf1/view?usp=sharing) (400+ MB)
+
+## Tech Stack
+* **Front-End**: [Streamlit](https://github.com/streamlit/streamlit)
+* **Cloud**: [Heroku](https://www.heroku.com/), [Streamlit Cloud](https://streamlit.io/cloud)
+* **DL-Framework**: [Tensorflow](https://github.com/tensorflow/tensorflow)
 
 
 ## Authors
