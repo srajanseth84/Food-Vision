@@ -6,7 +6,7 @@ import altair as alt
 from utils import load_and_prep, get_classes
 
 
-@st.cache(hash_funcs={builtins.tuple: lambda _ : None})
+@st.cache(hash_funcs={builtins.tuple: lambda _: None})
 def predicting(image, model):
     image = load_and_prep(image)
     image = tf.cast(tf.expand_dims(image, axis=0), tf.int16)
@@ -24,6 +24,7 @@ def predicting(image, model):
     df = df.sort_values('F1 Scores')
     return pred_class, pred_conf, df
 
+
 class_names = get_classes()
 
 st.set_page_config(page_title="Food Vision",
@@ -33,8 +34,9 @@ st.set_page_config(page_title="Food Vision",
 #### Main Body ####
 
 st.title("Food Vision 🍕📷")
-st.header("Identify what's in your food photos!")
-st.write("To know more about this app, visit [**GitHub**](https://github.com/srajanseth84/Food-Vision)")
+st.header("Identify what's in your Food Photos!")
+st.write(
+    "To know more about this app, visit [**GitHub**](https://github.com/srajanseth84/Food-Vision)")
 file = st.file_uploader(label="Upload an image of food.",
                         type=["jpg", "jpeg", "png"])
 
@@ -48,11 +50,12 @@ if not file:
 else:
     image = file.read()
     st.image(image, use_column_width=True)
-    pred_button = st.button("Predict")
+    pred_button = st.button("Predict 🍕")
 
 if pred_button:
     pred_class, pred_conf, df = predicting(image, model)
-    st.success(f'Prediction : {pred_class} \nConfidence : {pred_conf*100:.2f}%')
+    st.success(
+        f'Prediction : {pred_class} \nConfidence : {pred_conf*100:.2f}%')
     st.write(alt.Chart(df).mark_bar().encode(
         x='F1 Scores',
         y=alt.X('Top 5 Predictions', sort=None),
