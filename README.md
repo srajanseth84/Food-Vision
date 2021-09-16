@@ -20,18 +20,14 @@ It is based upom a pre-trained Image Classification Model that comes with Keras 
 
 ## Demo
 
-![](extras/)
-
+![](extras/food.gif)
 
 ## Few Examples
 
-* The beautiful ruins of the ancient city of Persepolis (Iran) with the style of Van Gogh (The Starry Night) 
-  <img src="images/">
-* The tomb of Cyrus the great in Pasargadae with the style of a Ceramic Kashi from Ispahan 
-  <img src="images/">
-* A scientific study of a turbulent fluid with the style of a abstract blue fluid painting
-  <img src = "images/">
-
+* Ice-Cream predicted as Ice-Creame
+  <img src="images/Icecream-predicted.png">
+* Pizza predicted as Pizza
+  <img src="images/pizza-predicted.png">
 ## Run Locally
 
 * Clone the project
@@ -69,6 +65,10 @@ It is based upom a pre-trained Image Classification Model that comes with Keras 
   streamlit run app.py 
 ```
 
+## All Food Classes (101)
+
+![](extras/all-101-food-class.gif)
+
 ## EFFICIENT-NET MODEL DESCRIPTION
 
 - EfficientNet is a convolutional neural network architecture and scaling method that uniformly scales all dimensions of depth/width/resolution using a compound coefficient. Unlike conventional practice that arbitrary scales these factors, the EfficientNet scaling method uniformly scales network width, depth, and resolution with a set of fixed scaling coefficients.
@@ -98,12 +98,22 @@ It is based upom a pre-trained Image Classification Model that comes with Keras 
 ### Trained Model (Inception-Resnet-V2)
 
 * [Download Link](https://drive.google.com/file/d/1oYT2Kcy8mNOyCOyJq5b6maZ9g84WcCf1/view?usp=sharing) (400+ MB)
+* Above model all layers
+
+![](extras/all-neural-network-layers.gif)
+
+* Training And Validation loss
+ 
+  <img src="images/train-and-val-loss.png">
+
+* Training And Validation Accuracy
+
+  <img src="images/training-and-val-accuracy.png">
 
 ## Tech Stack
 * **Front-End**: [Streamlit](https://github.com/streamlit/streamlit)
 * **Cloud**: [Heroku](https://www.heroku.com/), [Streamlit Cloud](https://streamlit.io/cloud)
 * **DL-Framework**: [Tensorflow](https://github.com/tensorflow/tensorflow)
-
 
 ## Authors
 
